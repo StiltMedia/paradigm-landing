@@ -4521,7 +4521,7 @@ section * {
   background: #000;
   padding-top: 0;
   padding-bottom: 0;
-  min-height: 550px;
+  min-height: 100vh;
   color: white;
   text-align: center;
   overflow: hidden;
@@ -4674,8 +4674,8 @@ section * {
 .header-16-sub .scroll-btn .mouse {
   position: relative;
   display: block;
-  width: 46px;
-  height: 73px;
+  width: 30px;
+  height: 50px;
   margin: 0 auto 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

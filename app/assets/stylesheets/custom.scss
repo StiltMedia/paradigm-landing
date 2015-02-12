@@ -1,0 +1,10 @@
+// Home Page
+
+.header-16-sub-home {
+  @extend .header-16-sub;
+  .background {
+    background-image:url(image-path("home-main.jpg"));
+    opacity: 1;
+    background-attachment: fixed;
+  }
+}
