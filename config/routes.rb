@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
-  get 'pages/home'
 
-  get 'pages/about'
+  root 'pages#home'
+
+  get '/about' => 'pages#about'
+  get '/basketball' => 'pages#basketball'
+  get '/football' => 'pages#football'
+  get '/mma' => 'pages#mma'
+  get '/services' => 'pages#services'
+  get '/soccer' => 'pages#soccer'
+  get '/sports' => 'pages#sports'
+  get '/thanks' => 'pages#thanks'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
