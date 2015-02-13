@@ -509,6 +509,63 @@ h4 {
   }
 }
 
+// Football Page
+
+.header-16-sub-football {
+  @extend .header-16-sub-about;
+  .background {
+    background-image:url(image-path("football-main.jpg")) !important;
+    opacity: .9;
+    background-color: #000000;
+    background-attachment: fixed;
+  }
+  h1 {
+    border: none;
+    font-size: 100px;
+    font-weight: 500;
+  }
+  h3 {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+
+}
+
+.content-32-football {
+  @extend .content-32;
+  background: #fafafa;
+  padding-top: 160px;
+  padding-bottom: 175px;
+  h1{
+    font-weight: 700;
+    text-align: left;
+    font-size: 30px;
+    color: #000000;
+  }
+  p {
+    color: #838383;
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
+    text-align: left;
+  }
+  h3 {
+    color:#000000;font-size:40px;font-weight:700;
+  }
+}
+
+.projects-2-football {
+  @extend .projects-2;
+  padding-top:0px!important;
+  .project-1.v-center-football{
+    @extend .project-1, .v-center;
+    opacity:1!important;
+    background-image:url(image-path("football1.jpg"));
+    background-attachment: fixed;
+  }
+}
+
 // Footer
 .footer-2{
   p, a {

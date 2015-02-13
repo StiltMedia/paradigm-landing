@@ -146,6 +146,28 @@
       })
     }(jQuery));
 
+    // MMA Page
+
+    (function($) {
+    $('.header-16-sub-football').each(function() {
+      if (! isMobile.any() ) {
+          $(this).parallax('50%', 0.3, true);
+        } else {
+          $(this).css('background-attachment', 'initial')
+        }
+      })
+    }(jQuery));
+
+    (function($) {
+    $('.v-center-football').each(function() {
+      if (! isMobile.any() ) {
+          $(this).parallax('50%', 0.3, true);
+        } else {
+          $(this).css('background-attachment', 'initial')
+        }
+      })
+    }(jQuery));
+
   </script>
 
 </body>
