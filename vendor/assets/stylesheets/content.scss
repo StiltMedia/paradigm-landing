@@ -4045,6 +4045,7 @@ section * {
   margin: 0 0 30px;
   font-size: 40px;
   color: #7f8c8d;
+  font-weight:500;
   -webkit-transition: 0.6s color;
   -moz-transition: 0.6s color;
   -o-transition: 0.6s color;
@@ -4073,7 +4074,7 @@ section * {
   transition: 0.6s background-color;
 }
 .content-31 .container .active > .number {
-  background: #1abc9c;
+  background: #000000;
 }
 .content-31 .container .box {
   margin-top: 70px;
@@ -4110,7 +4111,7 @@ section * {
   filter: alpha(opacity=100);
 }
 .content-31 .container .active h3 {
-  color: #1abc9c;
+  color: #000000;
 }
 .content-31 .container .active .img img:first-child {
   opacity: 0;
@@ -4231,10 +4232,10 @@ section * {
     filter: alpha(opacity=100);
   }
   .content-31 .container .number {
-    background: #1abc9c;
+    background: #000000;
   }
   .content-31 .container h3 {
-    color: #1abc9c;
+    color: #000000;
     font-size: 30px;
   }
   .content-31 .container .img img:first-child {

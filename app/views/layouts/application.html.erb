@@ -80,6 +80,28 @@
     })
   }(jQuery));
 
+  // Soccer Page
+
+  (function($) {
+  $('.header-16-sub-soccer').each(function() {
+    if (! isMobile.any() ) {
+        $(this).parallax('50%', 0.3, true);
+      } else {
+        $(this).css('background-attachment', 'initial')
+      }
+    })
+  }(jQuery));
+
+  (function($) {
+  $('.v-center-soccer').each(function() {
+    if (! isMobile.any() ) {
+        $(this).parallax('50%', 0.3, true);
+      } else {
+        $(this).css('background-attachment', 'initial')
+      }
+    })
+  }(jQuery));
+
   </script>
 
 </body>
