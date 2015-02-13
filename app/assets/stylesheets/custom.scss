@@ -1,9 +1,43 @@
+// Navbar
+#logotop{
+  position: fixed;
+  left: 20px;
+  top: 10px;
+}
+
+// Overlay when menu is clicked
+.menu-overlay{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0,0,0,.6);
+  z-index: 100;
+  display:none;
+}
 // Home Page
 
 .header-16-sub-home {
   @extend .header-16-sub;
   .background {
     background-image:url(image-path("home-main.jpg"));
+    opacity: 1;
+    background-attachment: fixed;
+  }
+}
+
+.content-23-home {
+  @extend .content-23;
+  .background {
+    background-image:url(image-path("services-home.jpg"));
+    opacity: 1;
+    background-attachment: fixed;
+  }
+}
+
+.content-23-home-2 {
+  @extend .content-23;
+  .background {
+    background-image:url(image-path("blog-home.jpg"));
     opacity: 1;
     background-attachment: fixed;
   }

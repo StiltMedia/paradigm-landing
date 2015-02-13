@@ -2,9 +2,9 @@
   <div id="h-16-pt-main" class="page-transitions pt-perspective">
     <div class="v-center pt-page pt-page-1 pt-page-current">
       <div>
-        <div class="background">&nbsp;</div>
+        <div class="background" id="header-main">&nbsp;</div>
         <div class="container">
-          <div class="hero-unit">
+          <div class="hero-unit" id="center-main">
             <%= image_tag 'logo.png' %>
           </div>
         </div>
@@ -20,6 +20,59 @@
         <h1>PARADIGM SPORTS MANAGEMENT</h1>
         <p>"Together Everyone Achieves More" - a mantra taught throughout sports and what we at Paradigm Sports Management emulate in our operations and management. Paradigm Sports Management breaks the conventional approach to offer a unique level of service that emulates our clients’ discipline, passion, and determination on their respective playing field.</p>
         <%= link_to 'Learn More', about_path, class: 'btn btn-inverse-home' %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-23-home">
+  <div class="background">&nbsp;</div>
+  <div class="holder v-center">
+    <div>
+      <div class="container">
+        <div class="slide-top hero-unit">
+          <h2>WHAT OUR CLIENTS ARE SAYING</h2>
+          <%= link_to 'Visit Blog', root_path, class:'btn btn-inverse-service' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-32-home">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="top">NEW 2015 FAMILY MEMBERS</h1>
+        <div class="row">
+          <%# @clients.each do |client| %>
+            <div class="col-md-4" style="padding-left: 0px;padding-right: 0px;">
+                <%# link_to image_tag(client.picture_url), client, class: 'img-responsive' if client.picture? %>
+            </div>
+          <%# end %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <h1 class="bottom">PARADIGM SPORTS CLIENTS LIST</h1>
+        <button class="btn btn-inverse-home">Learn More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-23-home-2">
+  <div class="background">&nbsp;</div>
+  <div class="holder v-center">
+    <div>
+      <div class="container">
+        <div class="slide-top hero-unit">
+          <h2>WHAT OUR CLIENTS ARE SAYING</h2>
+          <%= link_to 'Visit Blog', root_path, class:'btn btn-inverse-service' %>
+        </div>
       </div>
     </div>
   </div>

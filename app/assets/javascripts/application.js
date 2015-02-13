@@ -24,3 +24,6 @@
 //= require jquery.svganim
 //= require jquery.parallax.min
 //= require startup-kit
+//= require custom
+//= require menu
+//= require tcon
