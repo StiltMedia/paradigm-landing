@@ -68,6 +68,18 @@
     })
   }(jQuery));
 
+  // Service Page
+
+  (function($) {
+  $('.header-16-sub-services').each(function() {
+    if (! isMobile.any() ) {
+        $(this).parallax('50%', 0.3, true);
+      } else {
+        $(this).css('background-attachment', 'initial')
+      }
+    })
+  }(jQuery));
+
   </script>
 
 </body>

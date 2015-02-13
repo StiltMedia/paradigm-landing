@@ -250,6 +250,85 @@ footer {
   }
 }
 
+// Service Page
+
+.header-16-sub-services {
+  @extend .header-16-sub-about;
+  .background {
+    background-image:url(image-path("services-main.jpg"));
+    opacity: 1;
+    background-attachment: fixed;
+  }
+  h2 {
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    font-size: 25px;
+    border: none;
+  }
+  h1 {
+    border: none !important;
+    font-size: 90px !important;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+      font-size: 40px !important;
+      padding: 0px !important;
+    }
+    h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 40px !important;
+      padding: 0px !important;
+    }
+    h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+  }
+}
+
+.projects-2-services {
+  @extend .projects-2;
+  h1 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #ffffff;
+    padding-bottom:20px;
+  }
+  .project-1 {
+    background-image:url(image-path("soccer.jpg")) !important;
+  }
+  .project-2 {
+    background-image:url(image-path("basketball.jpg")) !important;
+  }
+  .project-3 {
+    background-image:url(image-path("mma.jpg")) !important;
+  }
+  .project-4 {
+    background-image:url(image-path("football.jpg")) !important;
+  }
+  .project-5 {
+    background-image:url(image-path("marketing.jpg")) !important;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+      font-size: 35px !important;
+    }
+  }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 35px !important;
+    }
+  }
+}
+
 
 
 // Footer
