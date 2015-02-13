@@ -146,7 +146,7 @@
       })
     }(jQuery));
 
-    // MMA Page
+    // Football Page
 
     (function($) {
     $('.header-16-sub-football').each(function() {
@@ -160,6 +160,18 @@
 
     (function($) {
     $('.v-center-football').each(function() {
+      if (! isMobile.any() ) {
+          $(this).parallax('50%', 0.3, true);
+        } else {
+          $(this).css('background-attachment', 'initial')
+        }
+      })
+    }(jQuery));
+
+    // Sports-Marketing Page
+
+    (function($) {
+    $('.header-16-sub-sports').each(function() {
       if (! isMobile.any() ) {
           $(this).parallax('50%', 0.3, true);
         } else {
