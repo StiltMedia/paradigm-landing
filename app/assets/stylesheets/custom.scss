@@ -156,3 +156,71 @@
     }
   }
 }
+
+
+
+
+
+// Footer
+.footer-2{
+  p, a {
+    color: white;
+  }
+}
+.footer-13 {
+  padding: 0;
+  .col-md-2 {
+    .overlay-facebook {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &:hover {
+        background: #2a6496;
+        a {
+          color: #ffffff;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .overlay-twitter {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &:hover {
+        background: #428bca;
+        a {
+          color: #ffffff;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .overlay-youtube {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &:hover {
+        background: #AF1300;
+        a {
+          color: #ffffff;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .overlay-linkedin {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &:hover {
+        background: #007BB6;
+        a {
+          color: #ffffff;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
