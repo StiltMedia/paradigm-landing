@@ -2,6 +2,10 @@ html, body{
   background: black;
 }
 
+footer {
+  padding: 0px;
+}
+
 // Navbar
 #logotop{
   position: fixed;
@@ -169,7 +173,82 @@ html, body{
   }
 }
 
+// About page
+.header-16-sub-about {
+  @extend .header-16-sub-home;
+  .background {
+    background-image:url(image-path("about-main.jpg"));
+    opacity: 1;
+    background-attachment: fixed;
+  }
+  h2 {
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    font-size: 25px;
+    border: none;
+  }
+  h1 {
+    border: none !important;
+    font-size: 90px !important;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+      font-size: 40px !important;
+      padding: 0px !important;
+    }
+    h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 40px !important;
+      padding: 0px !important;
+    }
+    h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+  }
+}
 
+.content-32-about{
+  @extend .content-32;
+  background: #ffffff;
+  padding-bottom: 0 !important;
+  h1 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #000000;
+    padding-bottom:20px;
+  }
+  .top{
+    padding-bottom: 50px;
+  }
+  .bottom {
+    padding-top: 140px;
+  }
+  p {
+    color: #838383;
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
+    text-align: left !important;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
 
 
 
