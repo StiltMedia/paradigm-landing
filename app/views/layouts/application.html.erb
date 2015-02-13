@@ -124,6 +124,28 @@
       })
     }(jQuery));
 
+    // MMA Page
+
+    (function($) {
+    $('.header-16-sub-mma').each(function() {
+      if (! isMobile.any() ) {
+          $(this).parallax('50%', 0.3, true);
+        } else {
+          $(this).css('background-attachment', 'initial')
+        }
+      })
+    }(jQuery));
+
+    (function($) {
+    $('.v-center-mma').each(function() {
+      if (! isMobile.any() ) {
+          $(this).parallax('50%', 0.3, true);
+        } else {
+          $(this).css('background-attachment', 'initial')
+        }
+      })
+    }(jQuery));
+
   </script>
 
 </body>
