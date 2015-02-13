@@ -9,7 +9,7 @@
           </div>
         </div>
       </div>
-      <span class="scroll-btn"><a href="#"> <span class="mouse"><span> </span></span></a></span>
+      <span class="scroll-btn"><a href="#next"> <span class="mouse"><span> </span></span></a></span>
     </div>
   </div>
 </section>
@@ -27,12 +27,14 @@
 
 <section class="content-23-home">
   <div class="background">&nbsp;</div>
-  <div class="holder v-center">
-    <div>
-      <div class="container">
-        <div class="slide-top hero-unit">
-          <h2>WHAT OUR CLIENTS ARE SAYING</h2>
-          <%= link_to 'Visit Blog', root_path, class:'btn btn-inverse-service' %>
+  <div class="container-fluid">
+    <div class="col-sm-6 pull-right">
+      <h1>SPORTS MANAGEMENT<br>SERVICES</h1>
+      <div class="row">
+        <div class="col-sm-12">
+          <p>Soccer<br>Basketball<br>MMA<br>Football<br>Sports Marketing</p>
+          <br>
+          <%= link_to 'Learn More', services_path, class: 'btn btn-inverse-service' %>
         </div>
       </div>
     </div>
@@ -44,20 +46,30 @@
     <div class="row">
       <div class="col-sm-12">
         <h1 class="top">NEW 2015 FAMILY MEMBERS</h1>
+        <div class="delimiter2"></div>
         <div class="row">
           <%# @clients.each do |client| %>
             <div class="col-md-4" style="padding-left: 0px;padding-right: 0px;">
                 <%# link_to image_tag(client.picture_url), client, class: 'img-responsive' if client.picture? %>
+                <%= image_tag 'testclient.jpg', class: 'img-responsive' %>
+            </div>
+            <div class="col-md-4" style="padding-left: 0px;padding-right: 0px;">
+              <%= image_tag 'testclient.jpg', class: 'img-responsive' %>
+            </div>
+            <div class="col-md-4" style="padding-left: 0px;padding-right: 0px;">
+              <%= image_tag 'testclient.jpg', class: 'img-responsive' %>
             </div>
           <%# end %>
         </div>
       </div>
     </div>
   </div>
+  <div class="delimiter2"></div>
   <div class="container">
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1">
         <h1 class="bottom">PARADIGM SPORTS CLIENTS LIST</h1>
+        <div class="delimiter2"></div>
         <button class="btn btn-inverse-home">Learn More</button>
       </div>
     </div>
@@ -70,7 +82,7 @@
     <div>
       <div class="container">
         <div class="slide-top hero-unit">
-          <h2>WHAT OUR CLIENTS ARE SAYING</h2>
+          <h1>WHAT OUR CLIENTS ARE SAYING</h1>
           <%= link_to 'Visit Blog', root_path, class:'btn btn-inverse-service' %>
         </div>
       </div>
