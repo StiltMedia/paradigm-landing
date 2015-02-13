@@ -27,3 +27,4 @@
 //= require custom
 //= require menu
 //= require tcon
+//= require jquery.fadethis

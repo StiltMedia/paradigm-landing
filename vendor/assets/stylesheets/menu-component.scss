@@ -21,12 +21,13 @@
 }
 
 .cbp-spmenu a:hover {
-	background: #258ecd;
+	border-right: #FB0000 solid 10px;
+	color: #fb0000;
 }
 
 .cbp-spmenu a:active {
-	background: #afdefa;
-	color: #47a3da;
+	background: #FB0000;
+	color: #ffffff;
 }
 
 /* Orientation-dependent styles for the content of the menu */
@@ -39,7 +40,6 @@
 }
 
 .cbp-spmenu-vertical a {
-	border-bottom: 1px solid #258ecd;
 	padding: 1em;
 }
 
