@@ -29,12 +29,14 @@ gem 'bootstrap-sass', '~> 3.3.3'
 gem 'font-awesome-rails', '~> 4.3.0.0'
 
 # Upload Files
-gem 'carrierwave', '~> 0.10.0'
-gem 'mini_magick', '~> 4.0.4'
+gem 'paperclip', '~> 4.2.1'
 
 # Backend
 gem 'activeadmin', github: 'activeadmin', branch: 'master'
 gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'master'
+gem 'better_errors', '~> 2.1.1'
+gem 'binding_of_caller', '~> 0.7.2'
+gem 'awesome_print', '~> 1.6.1'
 # My Stuff ends
 
 
