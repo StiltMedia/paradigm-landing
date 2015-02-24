@@ -48,22 +48,19 @@
         <h1 class="top">NEW 2015 FAMILY MEMBERS</h1>
         <div class="delimiter2"></div>
         <div class="row">
-          <%# @clients.each do |client| %>
+          <% @clients.each do |client| %>
             <div class="col-md-4" style="padding-left: 0px;padding-right: 0px;">
-                <%# link_to image_tag(client.picture_url), client, class: 'img-responsive' if client.picture? %>
-                <%= image_tag 'testclient.jpg', class: 'img-responsive' %>
+                <%= link_to client do %>
+                  <%= image_tag client.image.url(:retina), class: 'img-responsive' %>
+                <% end %>
+                <h2><%= link_to "#{client.name}", client %></h2>
             </div>
-            <div class="col-md-4" style="padding-left: 0px;padding-right: 0px;">
-              <%= image_tag 'testclient.jpg', class: 'img-responsive' %>
-            </div>
-            <div class="col-md-4" style="padding-left: 0px;padding-right: 0px;">
-              <%= image_tag 'testclient.jpg', class: 'img-responsive' %>
-            </div>
-          <%# end %>
+          <% end %>
         </div>
       </div>
     </div>
   </div>
+
   <div class="delimiter2"></div>
   <div class="container">
     <div class="row">

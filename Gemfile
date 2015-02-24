@@ -30,6 +30,8 @@ gem 'font-awesome-rails', '~> 4.3.0.0'
 
 # Upload Files
 gem 'paperclip', '~> 4.2.1'
+gem 'aws-sdk', '< 2.0'
+# gem 's3_direct_upload' # direct upload form helper and assets
 
 # Backend
 gem 'activeadmin', github: 'activeadmin', branch: 'master'

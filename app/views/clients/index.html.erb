@@ -19,7 +19,7 @@
             <tr>
               <td><%= client.name %></td>
               <td><%= client.bio.first(200).to_s+'...' %></td>
-              <td><%= image_tag client.image('thumb') %></td>
+              <td><%= image_tag client.image.url('thumb') %></td>
               <td><%= link_to 'Show', client %></td>
               <td><%= link_to 'Edit', edit_client_path(client) %></td>
               <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
