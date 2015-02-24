@@ -49,12 +49,12 @@
         <div class="delimiter2"></div>
         <div class="row">
           <% @clients.each do |client| %>
-            <div class="col-md-4" style="padding-left: 0px;padding-right: 0px;">
-                <%= link_to client do %>
-                  <%= image_tag client.image.url(:retina), class: 'img-responsive' %>
-                <% end %>
-                <h2><%= link_to "#{client.name}", client %></h2>
-            </div>
+
+              <div class="col-md-4" style="padding-left: 0px;padding-right: 0px;">
+                <h2><%= link_to "#{client.name}", client, class: 'client-name' %></h2>
+                <%= link_to image_tag(client.image.url(:retina), class: 'img-responsive hoverimg'), client %>
+              </div>
+
           <% end %>
         </div>
       </div>

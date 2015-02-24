@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  # skip_before_filter :authenticate_admin_user!
+  skip_before_filter :authenticate_admin_user!
   def home
     @clients = Client.order("id DESC").limit(3)
   end

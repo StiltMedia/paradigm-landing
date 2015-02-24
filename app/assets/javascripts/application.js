@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require_tree .
 //= require jquery-1.10.2.min
 //= require jquery.scrollTo-1.4.3.1-min
 //= require modernizr.custom

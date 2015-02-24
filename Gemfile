@@ -34,6 +34,7 @@ gem 'aws-sdk', '< 2.0'
 # gem 's3_direct_upload' # direct upload form helper and assets
 
 # Backend
+gem 'devise', '~> 3.4.1'
 gem 'activeadmin', github: 'activeadmin', branch: 'master'
 gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'master'
 gem 'better_errors', '~> 2.1.1'
