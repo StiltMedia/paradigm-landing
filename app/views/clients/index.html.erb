@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <p id="notice"><%= notice %></p>
+      <h1>Listing Clients</h1>
+      <%= link_to 'New Client', new_client_path, class: 'btn btn-danger btn-xs', style: 'margin-bottom:30px;' %>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Bio</th>
+            <th>Image</th>
+            <th colspan="4">Edit Client</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @clients.each do |client| %>
+            <tr>
+              <td><%= client.name %></td>
+              <td><%= client.bio.first(200).to_s+'...' %></td>
+              <td><%= image_tag client.image('thumb') %></td>
+              <td><%= link_to 'Show', client %></td>
+              <td><%= link_to 'Edit', edit_client_path(client) %></td>
+              <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
