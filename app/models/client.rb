@@ -9,6 +9,7 @@ class Client < ActiveRecord::Base
 
 
   :styles => {
+    :admin    => ['100x100#',  :jpg, :quality => 70],
     :thumb    => ['250x250#',  :jpg, :quality => 70],
     :preview  => ['500x500#',  :jpg, :quality => 70],
     :large    => ['600>',      :jpg, :quality => 70],
@@ -16,6 +17,7 @@ class Client < ActiveRecord::Base
   },
 
   :convert_options => {
+    :admin    => '-set colorspace sRGB -strip',
     :thumb    => '-set colorspace sRGB -strip',
     :preview  => '-set colorspace sRGB -strip',
     :large    => '-set colorspace sRGB -strip',

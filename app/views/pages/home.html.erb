@@ -32,7 +32,12 @@
       <h1>SPORTS MANAGEMENT<br>SERVICES</h1>
       <div class="row">
         <div class="col-sm-12">
-          <p>Soccer<br>Basketball<br>MMA<br>Football<br>Sports Marketing</p>
+          <p><%= link_to 'Soccer', soccer_path %><br>
+            <%= link_to 'Basketball', basketball_path %><br>
+            <%= link_to 'MMA', mma_path %><br>
+            <%= link_to 'Football', football_path %><br>
+            <%= link_to 'Sports Marketing', sports_path %>
+          </p>
           <br>
           <%= link_to 'Learn More', services_path, class: 'btn btn-inverse-service' %>
         </div>
@@ -65,7 +70,7 @@
       <div class="col-sm-10 col-sm-offset-1">
         <h1 class="bottom">PARADIGM SPORTS CLIENTS LIST</h1>
         <div class="delimiter2"></div>
-        <button class="btn btn-inverse-home">Learn More</button>
+        <%= link_to 'Learn More', clients_path, class: 'btn btn-inverse-home' %>
       </div>
     </div>
   </div>

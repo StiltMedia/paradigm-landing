@@ -18,12 +18,12 @@
 <div class="delimiter2"></div>
 
 <section>
-  <div class="container">
+  <div class="container-fluid">
     <div class="main">
       <ul id="og-grid" class="og-grid">
         <% @clients.each do |client| %>
         <li>
-          <%= link_to image_tag(client.image.url(:thumb)), client, data: {largesrc: client.image.url(:preview), title: client.name, description: client.bio} %>
+          <%= link_to image_tag(client.image.url(:thumb)), client, data: {largesrc: client.image.url(:preview), title: client.name, description: client.bio.first(300).to_s+'...'+' Read More' } %>
         </li>
         <% end %>
       </ul>

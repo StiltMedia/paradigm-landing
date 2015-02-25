@@ -20,7 +20,7 @@ ActiveAdmin.register Client do
     id_column
     column :name
     column :image do |client|
-      image_tag client.image.url('thumb')
+      image_tag client.image.url(:admin)
     end
     column :bio do |client|
       client.bio.first(300).to_s+'...'

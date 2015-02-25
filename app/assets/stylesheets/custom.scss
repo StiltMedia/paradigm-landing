@@ -154,6 +154,9 @@ h4 {
 .content-23-home {
   @extend .content-23;
   padding: 150px 0px 200px 0px;
+  a {
+    color:#ffffff;
+  }
   h1 {
     font-weight: 700;
     color: #ffffff;
@@ -658,6 +661,15 @@ h4 {
     background-attachment: fixed;
   }
 }
+
+// Client Show Page
+
+.clientshow {
+  a {
+    color: #000000;
+  }
+}
+
 
 // Footer
 .footer-2{
