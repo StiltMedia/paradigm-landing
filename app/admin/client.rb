@@ -4,7 +4,7 @@ ActiveAdmin.register Client do
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :create, :destroy, :name, :bio, :image, :id
+  permit_params :create, :destroy, :name, :bio, :image, :id, :tag_list
   #
   # or
   #
@@ -19,6 +19,7 @@ ActiveAdmin.register Client do
     selectable_column
     id_column
     column :name
+    column "Sport", :tag_list
     column :image do |client|
       image_tag client.image.url(:admin)
     end
@@ -31,6 +32,7 @@ ActiveAdmin.register Client do
   form do |f|
     f.inputs "Client Details" do
       f.input :name
+      f.input :tag_list, label: "Sport"
       f.input :bio
       f.input :image
     end

@@ -1,4 +1,5 @@
 class Client < ActiveRecord::Base
+  acts_as_taggable
   has_attached_file :image,
   :storage => :s3,
   :s3_credentials => Proc.new{|a| a.instance.s3_credentials },

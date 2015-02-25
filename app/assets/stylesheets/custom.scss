@@ -661,6 +661,29 @@ h4 {
     background-attachment: fixed;
   }
 }
+.sport-tag {
+  padding: 100px 0;
+  text-align: center;
+  background: #fafafa;
+  a {
+    color: #000000;
+    &:hover, &:active {
+      color: #000000;
+      opacity: 0.9;
+    }
+  }
+  ul {
+    margin-bottom: 0px;
+  }
+  li {
+    display: inline-block;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 15px;
+  }
+}
 
 // Client Show Page
 
