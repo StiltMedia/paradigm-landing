@@ -9,8 +9,8 @@ class Client < ActiveRecord::Base
 
 
   :styles => {
-    :thumb    => ['100x100#',  :jpg, :quality => 70],
-    :preview  => ['480x480#',  :jpg, :quality => 70],
+    :thumb    => ['250x250#',  :jpg, :quality => 70],
+    :preview  => ['500x500#',  :jpg, :quality => 70],
     :large    => ['600>',      :jpg, :quality => 70],
     :retina   => ['1200>',     :jpg, :quality => 30]
   },

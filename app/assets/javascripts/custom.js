@@ -31,7 +31,9 @@ $(function() {
   });
 });
 
-
+$(function() {
+  Grid.init();
+});
 
 // Header-16 fades
 

@@ -646,6 +646,19 @@ h4 {
   }
 }
 
+
+// Client
+
+.header-16-sub-client {
+  @extend .header-16-sub-about;
+  .background {
+    background-image:url(image-path("clients-main.jpg")) !important;
+    opacity: .9;
+    background-color: #000000;
+    background-attachment: fixed;
+  }
+}
+
 // Footer
 .footer-2{
   p, a {

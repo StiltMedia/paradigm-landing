@@ -1,4 +1,5 @@
 class ClientsController < InheritedResources::Base
+  before_action :authenticate_admin_user!, only: [:edit, :update, :destroy]
 
   private
 

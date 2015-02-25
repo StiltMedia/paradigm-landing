@@ -26,3 +26,4 @@
 //= require menu
 //= require tcon
 //= require jquery.fadethis
+//= require grid.js
