@@ -21,9 +21,9 @@
     <div class="row">
       <div class="com-xs-12">
         <ul>
-          <% tag_cloud Client.tag_counts, %w[s m l] do |tag| %>
+          <% tag_cloud Client.tag_counts.sort_by(&:name), %w[s m l] do |tag, css_class| %>
             <li>
-              <%= link_to tag.name, tag_path(tag.name) %>
+              <%= link_to tag.name, tag_path(tag.name), :class => css_class %>
             </li>
           <% end %>
         </ul>
@@ -35,11 +35,10 @@
 <section>
   <div class="container-fluid">
     <div class="main">
-      <ul id="og-grid" class="og-grid js-isotope">
+      <ul id="og-grid" class="og-grid">
         <% @clients.each do |client| %>
-        <li>
-          <%= link_to image_tag(client.image.url(:thumb)), client, data: {largesrc: client.image.url(:preview), title: client.name, description: client.bio.first(200).to_s+'...'+' Read More', isotope_options: '.'+client.tag_list.to_s } %>
-        </li>
+          <%= tag( "li", id: "testgrid", data: {group: client.tag_list }) %>
+            <%= link_to image_tag(client.image.url(:thumb)), client, data: {largesrc: client.image.url(:preview), title: client.name, description: client.bio.first(200).to_s+'...'+' Read More'} %>
         <% end %>
       </ul>
     </div>
