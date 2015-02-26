@@ -42,6 +42,7 @@ gem 'binding_of_caller', '~> 0.7.2'
 gem 'awesome_print', '~> 1.6.1'
 gem "figaro"
 gem 'acts-as-taggable-on'
+gem 'ckeditor', github: 'galetahub/ckeditor'
 # My Stuff ends
 
 

@@ -27,3 +27,4 @@
 //= require tcon
 //= require jquery.fadethis
 //= require grid.js
+//= require ckeditor/init

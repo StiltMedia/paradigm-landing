@@ -24,7 +24,7 @@ ActiveAdmin.register Client do
       image_tag client.image.url(:admin)
     end
     column :bio do |client|
-      client.bio.first(300).to_s+'...'
+      raw client.bio.first(300).to_s+'...'
     end
     actions
   end
@@ -33,7 +33,7 @@ ActiveAdmin.register Client do
     f.inputs "Client Details" do
       f.input :name
       f.input :tag_list, label: "Sport"
-      f.input :bio
+      f.input :bio, :as => :ckeditor
       f.input :image
     end
     f.actions
