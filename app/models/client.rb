@@ -13,7 +13,6 @@ class Client < ActiveRecord::Base
     :admin    => ['100x100#',  :jpg, :quality => 70],
     :thumb    => ['250x250#',  :jpg, :quality => 70],
     :preview  => ['500x500#',  :jpg, :quality => 70],
-    :large    => ['600>',      :jpg, :quality => 70],
     :retina   => ['1200>',     :jpg, :quality => 30]
   },
 
@@ -21,7 +20,6 @@ class Client < ActiveRecord::Base
     :admin    => '-set colorspace sRGB -strip',
     :thumb    => '-set colorspace sRGB -strip',
     :preview  => '-set colorspace sRGB -strip',
-    :large    => '-set colorspace sRGB -strip',
     :retina   => '-set colorspace sRGB -strip -sharpen 0x0.5'
   }
 
