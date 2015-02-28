@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :contacts
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   get 'tags/:tag', to: 'clients#index', as: :tag
@@ -16,6 +18,7 @@ Rails.application.routes.draw do
   get '/soccer' => 'pages#soccer'
   get '/sports' => 'pages#sports'
   get '/thanks' => 'pages#thanks'
+  get '/contact' => 'contacts#new', as: 'contact_email'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

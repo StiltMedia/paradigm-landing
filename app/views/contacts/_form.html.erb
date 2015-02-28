@@ -1,0 +1,35 @@
+<%= form_for(@contact) do |f| %>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% @contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+  <p><strong><small>NAME</small></strong></p>
+  <%= f.text_field :name, class: 'form-control' %><br>
+
+  <p><strong><small>EMAIL</small></strong></p>
+  <%= f.text_field :email, class: 'form-control' %><br>
+
+  <p><strong><small>PHONE</small></strong></p>
+  <%= f.text_field :phone, class: 'form-control' %><br>
+
+  <p><strong><small>CONTACT TYPE</small></strong></p>
+  <%= f.select :contact_type, nil, {prompt: 'Select One'}, {class: 'form-control'} do %>
+    <% [['Sports Management'], ['Football Management'], ['MMA Management'], ['Baseball Management'], ['Basketball Management'], ['Soccer Management'], ['Coaching Sponsorship']].each do |i| %>
+      <%= content_tag(:option, i.first) %>
+    <% end %>
+  <% end %><br>
+
+  <p><strong><small>MESSAGE</small></strong></p>
+  <%= f.text_area :message, class: 'form-control', rows: '5' %><br>
+    <%= f.submit "Send", class: "btn btn-default", style: 'width:100%;margin-top:30px;' %>
+<% end %>

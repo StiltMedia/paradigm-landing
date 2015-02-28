@@ -697,6 +697,60 @@ h4 {
   }
 }
 
+// Contact Page
+
+.header-16-sub-contact {
+  @extend .header-16-sub-about;
+  .background {
+    background-image:url(image-path("contact-main.jpg")) !important;
+    opacity: .9;
+    background-color: #000000;
+    background-attachment: fixed;
+  }
+  h1 {
+    border: none;
+    font-size: 100px;
+    font-weight: 500;
+  }
+  h3 {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+}
+
+.contact-form {
+  padding: 150px 0;
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    margin: 0px;
+    padding-bottom: 75px;
+  }
+  .form-control:focus {
+    border-color: rgba(226, 0, 0, .5);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(226, 0, 0, 0.2);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(226, 0, 0, 0.2);
+  }
+}
+
+
+// Thanks Page
+
+.thanks {
+  padding: 200px 0 250px;
+  h2 {
+    text-align: center;
+    color: #000000;
+  }
+  p {
+    text-align: center;
+  }
+}
+
 
 // Footer
 .footer-2{
