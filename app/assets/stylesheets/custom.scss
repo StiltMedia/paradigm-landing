@@ -672,8 +672,9 @@ h4 {
       opacity: 0.9;
     }
   }
-  ul {
+  ul, ol {
     margin-bottom: 0px;
+    padding: 0 0 0 40px;
   }
   li {
     display: inline-block;
