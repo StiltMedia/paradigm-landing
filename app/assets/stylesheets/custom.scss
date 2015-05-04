@@ -110,12 +110,21 @@ ul, ol {
   z-index: 100;
   display:none;
 }
+
+.bkg-blk{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0,0,0,.7);
+  display:block;
+}
 // Home Page
 
 .header-16-sub-home {
   @extend .header-16-sub;
+  position: relative;
   .background {
-    background-image:url(image-path("home-main.jpg"));
+    background-image:url(https://s3-us-west-2.amazonaws.com/paradigm-landing/static-pages+images/home.jpg);
     opacity: 1;
     background-attachment: fixed;
   }
