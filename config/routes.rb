@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get '/mma' => 'pages#mma'
   get '/services' => 'pages#services'
   get '/soccer' => 'pages#soccer'
-  get '/sports' => 'pages#sports'
+  get '/sports-business-consulting' => 'pages#sports'
   get '/thanks' => 'pages#thanks'
   get '/contact' => 'contacts#new', as: 'contact_email'
 
